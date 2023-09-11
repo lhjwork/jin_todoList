@@ -1,6 +1,6 @@
 import "./App.css";
 import React, { useState } from "react";
-import TodoLsit from "./components/TodoList/TodoLsit";
+import TodoList from "./components/TodoList/TodoList";
 import Header from "./components/Header/Header";
 
 const filters = ["all", "active", "completed"];
@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Header filters={filters} filter={filter} onFilterChange={setFilter} />
-      <TodoLsit filter={filter} />
+      <TodoList filter={filter} />
     </>
   );
 }

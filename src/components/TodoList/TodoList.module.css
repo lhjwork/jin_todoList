@@ -1,0 +1,12 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg);
+}
+
+.list {
+  /* flex 1 1 auto로 주고 하단데 addform이 내려가는 이유 확인해보기 */
+  flex: 1 1 auto;
+  overflow-y: auto;
+}
