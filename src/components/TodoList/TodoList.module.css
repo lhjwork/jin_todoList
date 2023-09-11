@@ -1,5 +1,7 @@
 .container {
   height: 100%;
+  /* position: fixed 안하고 이렇게 되는 이유가 궁금함... */
+  min-height: 0;
   display: flex;
   flex-direction: column;
   background-color: var(--color-bg);
