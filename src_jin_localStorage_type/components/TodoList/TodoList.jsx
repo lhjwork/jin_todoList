@@ -13,9 +13,6 @@ export default function TodoList({ filter }) {
     localStorage.setItem("obj", JSON.stringify(todos));
   }, [todos]);
 
-  const test2 = JSON.parse(localStorage.getItem("obj"));
-
-  console.log("resr", test2);
   const handleUpdate = (updated) =>
     setTodos(todos.map((t) => (t.id === updated.id ? updated : t)));
   const handleAdd = (todo) => {
